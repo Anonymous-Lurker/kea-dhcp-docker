@@ -6,6 +6,8 @@ would probably need to be modified for various specific subnets.  The current co
 to use the postgres backend, the on disk CSV backend is enabled.  It's easier to get a quick proof of concept going with the on disk storage
 configuration.
 
+The resulting image is pretty large at just under 1GB.  I'm still into how I can trim it down.
+
 This current iteration of the container does not specify exposed ports because I am using MacVlan.
 
 My docker network config command:
