@@ -1,5 +1,5 @@
 # kea-dhcp-docker
-Based on kea 1.4 [https://gitlab.isc.org/isc-projects/kea/wikis/home]
+Based on kea 1.4 https://gitlab.isc.org/isc-projects/kea/wikis/home
 
 Multi stage build that compiles kea-dhcp with the optional postgres backend driver enabled.  The config works but
 would probably need to be modified for various specific subnets.  The current config file kea-dhcp4.conf does not include the bits needed
