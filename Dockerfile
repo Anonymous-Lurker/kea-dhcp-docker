@@ -19,7 +19,7 @@ RUN rm /etc/apt/sources.list; \
 
 FROM ubuntu:18.04
 RUN  apt-get update; \ 
-     apt-get -y install tcpdump screen libpq5 liblog4cplus-1.1-9 libbotan-1.10-1 libboost-system1.65.1 iproute2 vim
+     apt-get -y install screen libpq5 liblog4cplus-1.1-9 libbotan-1.10-1 libboost-system1.65.1 iproute2 vim
 COPY --from=builder "/usr/local/kea" "/usr/local/kea"
 COPY "./kea-dhcp4.conf" "/usr/local/kea/etc"
 WORKDIR "/usr/local/kea"
